@@ -1,5 +1,5 @@
 import styles from './Itens.module.scss'
-import cardapio from './itens.json'
+import cardapio from 'data/cardapio.json'
 import Item from './Item'
 import { useEffect, useState } from 'react'
 
@@ -47,7 +47,6 @@ export default function Itens(props: Props) {
       item => testaBusca(item.title) && testaFiltro(item.category.id)
     )
     setLista(ordenar(novaLista))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [busca, filtro, ordenador])
   return (
     <div className={styles.itens}>
