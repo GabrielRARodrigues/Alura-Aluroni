@@ -4,7 +4,7 @@ import styles from './Menu.module.scss'
 export default function Menu() {
   const rotas = [
     {
-      label: 'inicio',
+      label: 'Início',
       to: '/'
     },
     {
